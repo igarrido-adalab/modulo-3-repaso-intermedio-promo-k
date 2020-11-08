@@ -1,11 +1,14 @@
+import React from 'react';
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      Content goes here
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        Content goes here
+      </div>
+    );
+  }
 }
 
 export default App;
