@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <!-- Icon from <https://icon-library.com/png/178921.html> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#099d8d" />
+    <meta
+      name="description"
+      content="Web site which displays a list of clubes (exercice from Adalab)."
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <!-- As seen in <https://forkaweso.me/Fork-Awesome/get-started/> -->
+    <title>Favorites clubs</title>
+    <style type="text/css">
+      .clubsList {
+        background-color: lightgray;
+        padding: 2em 2em;
+      }
+      .clubsList__clubItem {
+        background-color: white;
+        margin-top: 2em;
+        border-radius: 5px;
+        list-style: none;
+      }
+      .clubsList__clubItem:first-of-type {
+        margin-top: 0;
+      }
+      .clubsList__clubDetail {
+        display: flex;
+        flex-direction: row;
+      }
+      .clubsList__clubDetail--iconContainer {
+        box-sizing: border-box;
+        width: 30%;
+      }
+      .clubsList_clubDetail--data {
+        box-sizing: border-box;
+        width: 70%;
+      }
+
+      .clubsList__clubDetail--icon {
+        width: 100%;
+        font-size: 102px;
+        line-height: 144px;
+        text-align: center;
+        color: darkcyan;
+      }
+
+      .clubsList__clubDetail--membersTitle {
+        margin: 0 0 5px 0;
+        padding: 0;
+        font-size: 1rem;
+        color: darkgrey;
+      }
+
+      .clubsList__clubDetail--membersList {
+        width: 80%;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3px;
+        column-gap: 20px;
+      }
+      .clubsList__clubDetail--member {
+        list-style: none;
+      }
+
+      .componentLabel {
+        display: none;
+        position: absolute;
+        top: -25px;
+        left: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: red;
+      }
+      .components .componentLabel {
+        display: block;
+      }
+      .components .clubsList {
+        position: relative;
+        border: solid red 5px;
+      }
+
+      .components .clubsList__clubDetail {
+        position: relative;
+        border: solid lightcoral 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <main class="components">
+        <ul class="clubsList">
+          <span class="componentLabel">ClubList.js</span>
+          <li class="clubsList__clubItem">
+            <article class="clubsList__clubDetail">
+              <span class="componentLabel">Club.js</span>
+              <div class="clubsList__clubDetail--iconContainer">
+                <i class="clubsList__clubDetail--icon fa fa-hand-spock-o" aria-hidden="true"></i>
+              </div>
+              <div class="clubsList_clubDetail--data">
+                <h2 class="clubsList__clubDetail--title">Live long and prosper club</h2>
+                <section class="clubsList__clubDetail--members">
+                  <h3 class="clubsList__clubDetail--membersTitle">Members:</h3>
+                  <ul class="clubsList__clubDetail--membersList">
+                    <li class="clubsList__clubDetail--member">Shane Lambert</li>
+                    <li class="clubsList__clubDetail--member">Willie Young</li>
+                    <li class="clubsList__clubDetail--member">Jane Hunt</li>
+                    <li class="clubsList__clubDetail--member">Martha Houston</li>
+                    <li class="clubsList__clubDetail--member">Clyde Johnston</li>
+                  </ul>
+                </section>
+              </div>
+            </article>
+          </li>
+          <li class="clubsList__clubItem">
+            <article class="clubsList__clubDetail">
+              <span class="componentLabel">Club.js</span>
+              <div class="clubsList__clubDetail--iconContainer">
+                <i class="clubsList__clubDetail--icon fa fa-hand-spock-o" aria-hidden="true"></i>
+              </div>
+              <div class="clubsList_clubDetail--data">
+                <h2 class="clubsList__clubDetail--title">Live long and prosper club</h2>
+                <section class="clubsList__clubDetail--members">
+                  <h3 class="clubsList__clubDetail--membersTitle">Members:</h3>
+                  <ul class="clubsList__clubDetail--membersList">
+                    <li class="clubsList__clubDetail--member">Shane Lambert</li>
+                    <li class="clubsList__clubDetail--member">Willie Young</li>
+                    <li class="clubsList__clubDetail--member">Jane Hunt</li>
+                    <li class="clubsList__clubDetail--member">Martha Houston</li>
+                    <li class="clubsList__clubDetail--member">Clyde Johnston</li>
+                  </ul>
+                </section>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
